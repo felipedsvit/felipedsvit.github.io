@@ -12,6 +12,7 @@
   title: Mez
   description: Plataforma de mensageria multicanal — WhatsApp, Telegram, Instagram, Messenger.
   url: /portfolio/mez-go/
+  live: https://mez-go-page.felipedsvit.workers.dev/
   stack: [Go, NATS JetStream, PostgreSQL, Redis, MinIO]
   status: active
   visibility: private
