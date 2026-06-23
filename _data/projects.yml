@@ -1,0 +1,37 @@
+- name: erreia
+  title: Erreia
+  description: Kanban leve em Go com realtime via SSE e Postgres LISTEN/NOTIFY.
+  url: /portfolio/erreia/
+  repo: https://github.com/felipedsvit/erreia
+  stack: [Go, HTMX, Templ, PostgreSQL, MinIO]
+  status: active
+  visibility: public
+  featured: true
+
+- name: mez-go
+  title: Mez
+  description: Plataforma de mensageria multicanal — WhatsApp, Telegram, Instagram, Messenger.
+  url: /portfolio/mez-go/
+  stack: [Go, NATS JetStream, PostgreSQL, Redis, MinIO]
+  status: active
+  visibility: private
+  featured: true
+
+- name: comm
+  title: Comm
+  description: Monolito modular para e-commerce com checkout, pagamentos e emissão fiscal.
+  url: /portfolio/comm/
+  stack: [Go, PostgreSQL, Stripe, Mercado Pago]
+  status: active
+  visibility: private
+  featured: true
+
+- name: htmx-4-specialist
+  title: HTMX 4 Specialist
+  description: Skill para LLMs especializado em HTMX 4.0, HDA e server-side rendering.
+  url: /portfolio/htmx-4-specialist/
+  repo: https://github.com/felipedsvit/htmx-4-specialist
+  stack: [Markdown, YAML, HTMX]
+  status: active
+  visibility: public
+  featured: false

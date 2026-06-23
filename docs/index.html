@@ -1,0 +1,18 @@
+---
+layout: default
+title: Docs
+description: Documentação centralizada dos projetos.
+---
+<div class="container" style="padding-top:3rem;padding-bottom:3rem">
+  <h1>Documentação</h1>
+  <p style="color:var(--text-muted);margin-bottom:2rem">Documentação dos projetos — arquiteturas, APIs e guias.</p>
+
+  <ul class="post-list">
+    {% for project in site.data.projects %}
+    <li class="post-list-item">
+      <a class="post-list-title" href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      <span style="color:var(--text-muted);font-size:.875rem">{{ project.description }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

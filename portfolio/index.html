@@ -1,0 +1,24 @@
+---
+layout: default
+title: Portfolio
+description: Projetos Go — arquitetura hexagonal, mensageria multicanal, HTMX.
+---
+<div class="container" style="padding-top:3rem;padding-bottom:3rem">
+  <h1>Portfolio</h1>
+  <p style="color:var(--text-muted);margin-bottom:2rem">Projetos ativos — públicos e privados.</p>
+
+  <div class="projects-grid">
+    {% for project in site.data.projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+
+  {% if site.projects.size > 0 %}
+  <h2 class="section-title" style="margin-top:3rem">Detalhes</h2>
+  <div class="projects-grid">
+    {% for project in site.projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

@@ -1,0 +1,53 @@
+- name: Go
+  items:
+    - title: Effective Go
+      url: https://go.dev/doc/effective_go
+      description: O guia oficial de boas práticas em Go
+    - title: Go by Example
+      url: https://gobyexample.com
+      description: Exemplos práticos e diretos
+    - title: pkg.go.dev
+      url: https://pkg.go.dev
+      description: Documentação de pacotes Go
+
+- name: Arquitetura
+  items:
+    - title: Hexagonal Architecture
+      url: https://alistair.cockburn.us/hexagonal-architecture/
+      description: O artigo original de Alistair Cockburn
+    - title: Ports and Adapters Pattern
+      url: https://jmgarridopaz.github.io/content/hexagonalarchitecture.html
+      description: Guia completo sobre portas e adaptadores
+
+- name: HTMX
+  items:
+    - title: htmx.org
+      url: https://htmx.org
+      description: Documentação oficial do HTMX
+    - title: Hypermedia Systems
+      url: https://hypermedia.systems
+      description: Livro gratuito sobre HDA (Carson Gross et al.)
+    - title: Templ
+      url: https://templ.guide
+      description: Biblioteca de templates Go compilados
+
+- name: PostgreSQL
+  items:
+    - title: PostgreSQL Docs
+      url: https://www.postgresql.org/docs/
+      description: Documentação oficial
+    - title: Use the Index, Luke
+      url: https://use-the-index-luke.com
+      description: Guia de performance e índices
+    - title: Row Level Security
+      url: https://www.postgresql.org/docs/current/ddl-rowsecurity.html
+      description: RLS para multi-tenancy
+
+- name: Mensageria
+  items:
+    - title: NATS JetStream
+      url: https://docs.nats.io/nats-concepts/jetstream
+      description: Documentação do JetStream
+    - title: whatsmeow
+      url: https://github.com/tulir/whatsmeow
+      description: Biblioteca Go para WhatsApp Web API

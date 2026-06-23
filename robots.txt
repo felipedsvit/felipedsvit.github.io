@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://felipedsvit.github.io/sitemap.xml

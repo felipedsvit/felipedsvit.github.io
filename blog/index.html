@@ -1,0 +1,35 @@
+---
+layout: default
+title: Blog
+description: Artigos técnicos sobre Go, arquitetura hexagonal, HTMX e mensageria.
+---
+<div class="container" style="padding-top:3rem;padding-bottom:3rem">
+  <h1>Blog</h1>
+  <p style="color:var(--text-muted);margin-bottom:2rem">Artigos sobre Go, arquitetura, HTMX e mensageria multicanal.</p>
+
+  {% if site.posts.size > 0 %}
+    {% assign all_tags = "" %}
+    {% for post in site.posts %}
+      {% for tag in post.tags %}
+        {% assign all_tags = all_tags | append: tag | append: "," %}
+      {% endfor %}
+    {% endfor %}
+    {% assign tag_list = all_tags | split: "," | sort | uniq %}
+    {% if tag_list.size > 0 %}
+    <div style="margin-bottom:1.5rem">
+      {% for tag in tag_list %}{% unless tag == "" %}<span class="tag">{{ tag }}</span>{% endunless %}{% endfor %}
+    </div>
+    {% endif %}
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li class="post-list-item">
+        <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p style="color:var(--text-muted)">Em breve — artigos sobre Go, arquitetura hexagonal e HTMX.</p>
+  {% endif %}
+</div>

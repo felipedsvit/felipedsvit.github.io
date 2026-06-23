@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="container">
+  <article class="project-page">
+    <header class="project-header">
+      <div class="project-meta">
+        {% if page.status %}<span class="badge badge-{{ page.status }}">{{ page.status }}</span>{% endif %}
+        {% if page.visibility == "private" %}
+        <span class="badge badge-private">privado</span>
+        {% else %}
+        <span class="badge badge-public">público</span>
+        {% endif %}
+      </div>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="project-description">{{ page.description }}</p>
+      {% endif %}
+      {% if page.stack %}
+      <div class="project-stack">
+        {% for tech in page.stack %}<span class="tag">{{ tech }}</span>{% endfor %}
+      </div>
+      {% endif %}
+      <div class="project-links">
+        {% if page.repo %}<a href="{{ page.repo }}" class="btn btn-primary" target="_blank" rel="noopener">GitHub →</a>{% endif %}
+        {% if page.demo %}<a href="{{ page.demo }}" class="btn btn-secondary" target="_blank" rel="noopener">Demo →</a>{% endif %}
+      </div>
+    </header>
+    <div class="project-content">
+      {{ content }}
+    </div>
+  </article>
+</div>

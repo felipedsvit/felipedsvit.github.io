@@ -1,0 +1,7 @@
+{% if include.url %}
+<a href="{{ include.url }}" target="_blank" rel="noopener">
+  <img src="{{ include.src }}" alt="{{ include.alt | default: 'badge' }}" style="display:inline;height:20px;vertical-align:middle">
+</a>
+{% else %}
+<img src="{{ include.src }}" alt="{{ include.alt | default: 'badge' }}" style="display:inline;height:20px;vertical-align:middle">
+{% endif %}

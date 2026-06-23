@@ -1,0 +1,11 @@
+- category: Backend
+  items: [Go, PostgreSQL, NATS JetStream, Redis, MinIO]
+
+- category: Frontend
+  items: [HTMX, Templ, CSS, JavaScript]
+
+- category: Arquitetura
+  items: [Hexagonal, Clean Architecture, DDD, Event-Driven, Multi-tenant]
+
+- category: DevOps
+  items: [Docker, GitHub Actions, Linux]

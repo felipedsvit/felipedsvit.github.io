@@ -1,0 +1,63 @@
+title: Felipe Dsvit
+description: Go developer — arquitetura hexagonal, mensageria multicanal, HTMX.
+url: https://felipedsvit.github.io
+baseurl: ""
+lang: pt-BR
+
+author:
+  name: Felipe Dsvit
+  github: felipedsvit
+  email: felipedsvit@gmail.com
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    block:
+      line_numbers: false
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /portfolio/:name/
+  snippets:
+    output: true
+    permalink: /snippets/:slug/
+
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: post }
+  - scope: { path: "", type: "projects" }
+    values: { layout: project }
+  - scope: { path: "", type: "snippets" }
+    values: { layout: snippet }
+
+# Permalink para posts
+permalink: /blog/:year/:slug/
+
+# Plugins (suportados pelo GitHub Pages)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-relative-links
+
+# Feed RSS
+feed:
+  path: feed.xml
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
+  - vendor/
+  - .bundle/
+  - .jekyll-cache/
+  - prompt.md

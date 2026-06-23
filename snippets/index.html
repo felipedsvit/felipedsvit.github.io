@@ -1,0 +1,24 @@
+---
+layout: default
+title: Snippets
+description: Trechos de código reutilizáveis em Go, SQL e HTMX.
+---
+<div class="container" style="padding-top:3rem;padding-bottom:3rem">
+  <h1>Snippets</h1>
+  <p style="color:var(--text-muted);margin-bottom:2rem">Trechos prontos para uso — Go, SQL, HTMX, Shell.</p>
+
+  {% if site.snippets.size > 0 %}
+  <ul class="post-list">
+    {% for snippet in site.snippets %}
+    <li class="post-list-item">
+      <a class="post-list-title" href="{{ snippet.url | relative_url }}">{{ snippet.title }}</a>
+      <div>
+        {% for tag in snippet.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p style="color:var(--text-muted)">Em breve — snippets de Go, SQL e HTMX.</p>
+  {% endif %}
+</div>
